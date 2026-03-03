@@ -1,1 +1,35 @@
-
+{
+  "student_metadata": {
+    "name": "Soniya Malviya",
+    "roll_number": "230159",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude",
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Claude",
+      "purpose": "All the mention critera for section A is fullfilled or not",
+      "prompt": "All the mention critera for section A is fullfilled or not + pdf",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested paper is correct full filled all the criterias what are library needed for implementation",
+      "student_verification": "Cross-checked by reading abstract of paper",
+      "confidence_level": 5
+    }
+    
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Soniya Malviya",
+    "date": "2026-03-01"
+  }
+}
