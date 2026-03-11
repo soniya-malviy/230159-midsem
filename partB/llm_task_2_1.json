@@ -1,7 +1,7 @@
 {
   "student_verification": {
-    "name": "AML Part B Student",
-    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "name": "Soniya Malviya",
+    "roll_number": "230159",
     "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
   },
   "task_tag": "Task 2.1",
