@@ -1,0 +1,59 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 1.2",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 1.2",
+      "prompt": "What are assumptions specific to NBSVM's design, not general ML assumptions?",
+      "response_summary": "Suggested thinking about (1) r being stable/informative, (2) binarization being better than counts, (3) BoF sufficiency for sentiment.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 1.2",
+      "prompt": "Give me an example scenario where the BoF assumption is violated for sentiment.",
+      "response_summary": "Suggested negation-heavy text as a canonical violation scenario.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 1.2",
+      "prompt": "Where in the paper is binarization mentioned as a design choice?",
+      "response_summary": "Pointed to Section 2.1 and Section 4.6 of the paper.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What are assumptions specific to NBSVM's design, not general ML assumptions?",
+      "task_tag": "Task 1.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "Give me an example scenario where the BoF assumption is violated for sentiment.",
+      "task_tag": "Task 1.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "Where in the paper is binarization mentioned as a design choice?",
+      "task_tag": "Task 1.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 2.1",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 2.1",
+      "prompt": "I need a synthetic binary sentiment dataset for testing NBSVM. What design choices should I make?",
+      "response_summary": "Suggested overlapping vocabulary with noise injection, balanced classes, ~15 word snippets. Explained why overlap matters.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 2.1",
+      "prompt": "What preprocessing does the Wang & Manning paper use?",
+      "response_summary": "Quoted Section 4.1: no stopwords, no lexicons, binary features, \u03b1=1, C=1, \u03b2=0.25.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 2.1",
+      "prompt": "Help me write a CountVectorizer setup for binarized unigrams and bigrams.",
+      "response_summary": "Suggested CountVectorizer(ngram_range=(1,1), binary=True, min_df=2). Explained binary=True implements Section 2.1 binarization.",
+      "code_used_verbatim": true,
+      "student_modification": "Changed ngram_range and min_df to match paper's setup; added comment referencing Section 2.1; integrated into full pipeline."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "I need a synthetic binary sentiment dataset for testing NBSVM. What design choices should I make?",
+      "task_tag": "Task 2.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "What preprocessing does the Wang & Manning paper use?",
+      "task_tag": "Task 2.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "Help me write a CountVectorizer setup for binarized unigrams and bigrams.",
+      "task_tag": "Task 2.1",
+      "code_used_verbatim": true,
+      "student_modification": "Changed ngram_range and min_df to match paper's setup; added comment referencing Section 2.1; integrated into full pipeline.",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

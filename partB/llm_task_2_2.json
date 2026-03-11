@@ -1,0 +1,74 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 2.2",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 2.2",
+      "prompt": "Help me implement Equation 2 from Wang & Manning 2012 in Python with scipy sparse matrices.",
+      "response_summary": "Provided numpy approach: p = alpha + X[y==1].sum(0), normalise, log-ratio.",
+      "code_used_verbatim": true,
+      "student_modification": "Rewrote to use .flatten() correctly, changed variable names to match paper notation (p, q, r), added alpha parameter, added docstring referencing Eq. 2."
+    },
+    {
+      "task_tag": "Task 2.2",
+      "prompt": "How do I implement the NBSVM interpolation (Equation 4)?",
+      "response_summary": "Explained: compute w_bar = abs(w).mean(), then w' = (1-beta)*w_bar + beta*w.",
+      "code_used_verbatim": true,
+      "student_modification": "Integrated into full function with proper variable names, added explanation of what w_bar represents."
+    },
+    {
+      "task_tag": "Task 2.2",
+      "prompt": "What does LinearSVC's loss='squared_hinge' correspond to in the paper?",
+      "response_summary": "Explained L2-loss = squared hinge loss as in Eq. (3), confirms this is the variant the authors identify as best.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 2.2",
+      "prompt": "How should I explain each code block in relation to the paper for the annotations?",
+      "response_summary": "Suggested referencing equation numbers, section numbers, and explaining the purpose of each computational step.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Help me implement Equation 2 from Wang & Manning 2012 in Python with scipy sparse matrices.",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": true,
+      "student_modification": "Rewrote to use .flatten() correctly, changed variable names to match paper notation (p, q, r), added alpha parameter, added docstring referencing Eq. 2.",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "How do I implement the NBSVM interpolation (Equation 4)?",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": true,
+      "student_modification": "Integrated into full function with proper variable names, added explanation of what w_bar represents.",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "What does LinearSVC's loss='squared_hinge' correspond to in the paper?",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 4,
+      "prompt": "How should I explain each code block in relation to the paper for the annotations?",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

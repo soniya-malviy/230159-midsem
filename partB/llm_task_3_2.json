@@ -1,0 +1,59 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 3.2",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 3.2",
+      "prompt": "What failure mode would connect to the bag-of-features assumption I identified in Task 1.2?",
+      "response_summary": "Strongly suggested negation-rich text as it directly violates BoF \u2014 the scope of 'not' is not captured.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 3.2",
+      "prompt": "How do I generate a negation-rich synthetic test set?",
+      "response_summary": "Suggested constructing positive examples from negated negative words and vice versa.",
+      "code_used_verbatim": true,
+      "student_modification": "Modified negation generation to include neutral context words and shuffle word order for realism."
+    },
+    {
+      "task_tag": "Task 3.2",
+      "prompt": "What is the standard NLP technique for handling negation in bag-of-words models?",
+      "response_summary": "Described the NOT_ prefix approach (Das & Chen 2007, Pang & Lee 2002) as a concrete modification suggestion.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What failure mode would connect to the bag-of-features assumption I identified in Task 1.2?",
+      "task_tag": "Task 3.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "How do I generate a negation-rich synthetic test set?",
+      "task_tag": "Task 3.2",
+      "code_used_verbatim": true,
+      "student_modification": "Modified negation generation to include neutral context words and shuffle word order for realism.",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "What is the standard NLP technique for handling negation in bag-of-words models?",
+      "task_tag": "Task 3.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

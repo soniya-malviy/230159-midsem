@@ -1,0 +1,74 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 3.1",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 3.1",
+      "prompt": "What are two good components to ablate in NBSVM that would be informative?",
+      "response_summary": "Suggested (1) the NB log-count ratio feature scaling and (2) the interpolation parameter \u03b2.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 3.1",
+      "prompt": "How do I implement the ablated version of NBSVM without the NB ratio?",
+      "response_summary": "Suggested passing X_train directly to SVM instead of X_train.multiply(r).",
+      "code_used_verbatim": true,
+      "student_modification": "Modified to keep the interpolation step (Eq. 4) so only ONE component is ablated at a time. Added docstring."
+    },
+    {
+      "task_tag": "Task 3.1",
+      "prompt": "The ablation 1 result shows 50% accuracy \u2014 is that meaningful or a bug?",
+      "response_summary": "Explained that 50% on binary classification = random guessing. Suggested it shows r is the primary discriminative source.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 3.1",
+      "prompt": "Help me format a line plot for the beta ablation showing both unigram and bigram curves.",
+      "response_summary": "Suggested ax.plot with two series, axvline for paper default, grid for readability.",
+      "code_used_verbatim": true,
+      "student_modification": "Added annotations for \u03b2=0 and \u03b2=1 endpoints, adjusted y-axis range to show variation."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What are two good components to ablate in NBSVM that would be informative?",
+      "task_tag": "Task 3.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "How do I implement the ablated version of NBSVM without the NB ratio?",
+      "task_tag": "Task 3.1",
+      "code_used_verbatim": true,
+      "student_modification": "Modified to keep the interpolation step (Eq. 4) so only ONE component is ablated at a time. Added docstring.",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "The ablation 1 result shows 50% accuracy \u2014 is that meaningful or a bug?",
+      "task_tag": "Task 3.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 4,
+      "prompt": "Help me format a line plot for the beta ablation showing both unigram and bigram curves.",
+      "task_tag": "Task 3.1",
+      "code_used_verbatim": true,
+      "student_modification": "Added annotations for \u03b2=0 and \u03b2=1 endpoints, adjusted y-axis range to show variation.",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

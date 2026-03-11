@@ -1,0 +1,59 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 2.3",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 2.3",
+      "prompt": "How should I explain the large accuracy gap between my results (~99%) and paper (~78%)?",
+      "response_summary": "Advised to mention synthetic vs real data, vocabulary size, natural language variation as explanations. Noted qualitative trends still valid.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 2.3",
+      "prompt": "What should go in a reproducibility checklist for an ML notebook?",
+      "response_summary": "Listed: seeds, dependencies, clean run, data loading, hyperparameter documentation.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 2.3",
+      "prompt": "Help me format a confusion matrix plot with seaborn.",
+      "response_summary": "Suggested sns.heatmap with annot=True, fmt='d', appropriate labels.",
+      "code_used_verbatim": true,
+      "student_modification": "Modified to use custom labels matching paper's class names, adjusted figure size and title to include accuracy."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "How should I explain the large accuracy gap between my results (~99%) and paper (~78%)?",
+      "task_tag": "Task 2.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "What should go in a reproducibility checklist for an ML notebook?",
+      "task_tag": "Task 2.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "Help me format a confusion matrix plot with seaborn.",
+      "task_tag": "Task 2.3",
+      "code_used_verbatim": true,
+      "student_modification": "Modified to use custom labels matching paper's class names, adjusted figure size and title to include accuracy.",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

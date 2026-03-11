@@ -1,0 +1,59 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 4.1",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 4.1",
+      "prompt": "Help me structure a 4-page report covering reproduction, ablation, failure mode, and reflection.",
+      "response_summary": "Suggested 5-section structure matching the requirements. Advised keeping each section to 1-2 paragraphs.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 4.1",
+      "prompt": "Review my paper summary paragraph for accuracy and conciseness.",
+      "response_summary": "Suggested minor edits for clarity. Confirmed the summary accurately captures the 3 main findings.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 4.1",
+      "prompt": "Help me write the reflection section honestly.",
+      "response_summary": "Advised to focus on what genuinely surprised me (Ablation 1 collapse) and what real dataset experiments would reveal.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Help me structure a 4-page report covering reproduction, ablation, failure mode, and reflection.",
+      "task_tag": "Task 4.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "Review my paper summary paragraph for accuracy and conciseness.",
+      "task_tag": "Task 4.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "Help me write the reflection section honestly.",
+      "task_tag": "Task 4.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

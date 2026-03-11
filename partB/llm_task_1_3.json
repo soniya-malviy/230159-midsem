@@ -1,0 +1,44 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 1.3",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 1.3",
+      "prompt": "What baseline does Wang & Manning compare most against and what limitation do they identify?",
+      "response_summary": "Identified Tree-CRF (Nakagawa 2010) and BoWSVM as primary baselines. Limitation: complex models or under-tuned NB/SVM variants.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 1.3",
+      "prompt": "When would NBSVM NOT beat Tree-CRF based on the paper's claims?",
+      "response_summary": "Discussed that negation-heavy benchmarks or tasks requiring syntactic scope would favour Tree-CRF.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What baseline does Wang & Manning compare most against and what limitation do they identify?",
+      "task_tag": "Task 1.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "When would NBSVM NOT beat Tree-CRF based on the paper's claims?",
+      "task_tag": "Task 1.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}

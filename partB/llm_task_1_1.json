@@ -1,0 +1,59 @@
+{
+  "student_verification": {
+    "name": "AML Part B Student",
+    "roll_number": "[YOUR_ROLL_NUMBER]",
+    "declaration": "I confirm that all LLM interactions listed below are complete and accurate, and that all decisions regarding ablation choices, failure mode identification, and honest reflection are my own."
+  },
+  "task_tag": "Task 1.1",
+  "llm_used": "Claude (claude.ai)",
+  "no_llm_used": false,
+  "interactions": [
+    {
+      "task_tag": "Task 1.1",
+      "prompt": "Can you help me understand what the step-by-step flow of NBSVM is, from raw text to prediction?",
+      "response_summary": "Explained the pipeline: tokenise \u2192 binarize \u2192 compute r (Eq 2) \u2192 MNB or SVM on scaled features \u2192 interpolate (Eq 4).",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 1.1",
+      "prompt": "What is the difference between MNB and standard NB in this paper?",
+      "response_summary": "Clarified that MNB uses multinomial event model (count of each word) vs Bernoulli NB (binary occurrence). Both binarized in this paper.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    },
+    {
+      "task_tag": "Task 1.1",
+      "prompt": "What does w_bar mean in Equation 4?",
+      "response_summary": "Explained w_bar = ||w||_1 / |V| is the mean absolute weight magnitude, used as a shrinkage target.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Can you help me understand what the step-by-step flow of NBSVM is, from raw text to prediction?",
+      "task_tag": "Task 1.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 2,
+      "prompt": "What is the difference between MNB and standard NB in this paper?",
+      "task_tag": "Task 1.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    },
+    {
+      "rank": 3,
+      "prompt": "What does w_bar mean in Equation 4?",
+      "task_tag": "Task 1.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A \u2014 code was rewritten based on conceptual guidance only",
+      "reason_selected": "Representative interaction for this task"
+    }
+  ]
+}
